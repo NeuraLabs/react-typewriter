@@ -98,9 +98,11 @@ class TypeWriter extends React.Component {
       fixed,
       ...props
     } = this.props;
-    delete props.typing
-    delete props.maxDelay
-    delete props.minDelay
+    delete props.typing;
+    delete props.initDelay;
+    delete props.maxDelay;
+    delete props.minDelay;
+    delete props.onTypingEnd;
     const {
       visibleChars
     } = this.state;
